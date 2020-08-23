@@ -2,7 +2,7 @@ const express = require('express')
 const app = express()
 const server = require('http').createServer(app)
 const io = require('socket.io')(server)
-const port = proccess.env.PORT || 5000
+const port = process.env.PORT || 5000
 const formatMessage = require('./utils/message')
 const {
     userJoin,
